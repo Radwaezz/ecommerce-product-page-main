@@ -38,13 +38,13 @@
   
   .main-image-container {
     position: relative;
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
     border-radius: 10px;
     overflow: hidden;
   }
   
   .main-image {
-    width: 100%;
+    width: 90%;
     height: auto;
     display: block;
   }
