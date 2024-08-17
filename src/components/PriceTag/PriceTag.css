@@ -1,0 +1,31 @@
+.price-tag {
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  /* background-color: aquamarine; */
+}
+
+.current-price {
+  color: black;
+}
+
+.discount {
+  background-color: black;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.original-price {
+  display: block; 
+  text-decoration: line-through;
+  color: #aaa;
+  font-size: 12px;
+  width: 100%; 
+  margin-top: 0.5rem; 
+}

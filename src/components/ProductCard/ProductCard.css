@@ -1,0 +1,102 @@
+/* Ensure the parent container is a flex container to center the product card */
+.product-card-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Full viewport height */
+  padding: 20px; /* Padding around the card */
+  /* width: 50%; */
+}
+
+/* Default styles for the product card */
+.product-card {
+  display: flex;
+  flex-direction: column; /* Stack items vertically on small screens */
+  padding: 20px;
+  align-items: center; /* Center items on small screens */
+}
+
+/* Image styling */
+.product-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Product details styling */
+.product-details {
+  margin-top: 20px; /* Space between image and details */
+  text-align: center; /* Center text for small screens */
+  width: 100%; /* Full width on small screens */
+}
+
+/* Product title styling */
+.product-title {
+  font-size: 1.8rem; /* Responsive font size */
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Product description styling */
+.product-description {
+  margin-bottom: 15px;
+  line-height: 1.5; /* Adjust line height */
+  color: rgb(150, 146, 146);
+  font-size: 14px;
+  width: 90%;
+}
+
+/* Product actions styling */
+.product-actions {
+  margin-top: 20px; /* Margin for actions */
+}
+
+/* Product brand styling */
+.product-brand {
+  font-weight: bold;
+  color: rgb(150, 146, 146);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* Media Queries */
+
+/* For screens larger than 600px (tablets) */
+@media (min-width: 600px) {
+  .product-card {
+    flex-direction: row; /* Align items horizontally for larger screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .product-details {
+    margin-left: 20px; /* Add margin for spacing */
+    text-align: left; /* Align text to the left */
+    width: auto; /* Reset width for larger screens */
+  }
+
+  .product-title {
+    font-size: 2rem; /* Increase font size */
+  }
+
+  .product-description {
+    font-size: 16px; /* Increase font size */
+  }
+
+  .product-actions {
+    margin-top: 30px; /* Adjust margin */
+  }
+}
+
+/* For screens larger than 1024px (desktops) */
+@media (min-width: 1024px) {
+  .product-card {
+    padding: 40px; /* Increase padding */
+  }
+
+  .product-title {
+    font-size: 2.5rem; /* Further increase font size */
+  }
+
+  .product-description {
+    font-size: 18px; /* Further increase font size */
+  }
+}
