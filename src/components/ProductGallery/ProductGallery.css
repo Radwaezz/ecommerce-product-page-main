@@ -362,4 +362,9 @@
     .popup-nav-button.next {
       right: 50px;
     }
+    .main-image-container {
+      position: relative;
+      margin-left: 5px;
+    }
+    
   }
